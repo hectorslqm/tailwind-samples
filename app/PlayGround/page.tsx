@@ -15,7 +15,7 @@ export default function PlayGround() {
         <div className="h-16 w-16 rounded-full bg-blue-500 flex items-center justify-center">Space</div>
       </div>
       <div className="pt-2 flex justify-between items-center">
-        <div className="h-16 w-16 border-l-[32px] border-r-[32px] border-b-[60px] border-b-blue-500"></div>
+        <div className="h-16 w-16 border-l-[32px] border-l-transparent border-r-[32px] border-r-transparent border-b-[60px] border-b-blue-500"></div>
         <p className="font-bold">Now</p>
         <div className="h-16 w-16 rounded-md bg-blue-500 text-center"></div>
         <p className="font-bold">Flex Box</p>
@@ -66,6 +66,8 @@ export default function PlayGround() {
           The Dark Mode Button
         </button>
       </div>
+      <p className="text-[12px] text-[#973f29] bg-stone-200 p-[16px]">Chestnut custom color</p>
+      <p className="text-[12px] text-customChestnutColor bg-stone-200 p-[16px]">Chestnut custom color see tailwind.config.ts</p>
     </main>
   );
 }
