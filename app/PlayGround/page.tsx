@@ -51,7 +51,8 @@ export default function PlayGround() {
         }
       </ul>
       {/* Theme Dark:*/}
-      <div className="m-10 rounded-lg bg-white px-6 py-8 shadow-xl ring-1 ring-slate-900/5 dark:bg-black">
+      {/* card holds multiple properties and is in globals.css */}
+      <div className="card">
         <h3 className="text-base font-medium tracking-tight text-slate-900 dark:text-white">This is a Text Element</h3>
         <p className="mt-2 text-sm text-slate-500 dark:text-blue-100">This is an even longer p tag element</p>
         <button 
@@ -66,6 +67,7 @@ export default function PlayGround() {
           The Dark Mode Button
         </button>
       </div>
+      <button className="gradient-button">Gradient Button</button>
       <p className="text-[12px] text-[#973f29] bg-stone-200 p-[16px]">Chestnut custom color</p>
       <p className="text-[12px] text-customChestnutColor bg-stone-200 p-[16px]">Chestnut custom color see tailwind.config.ts</p>
     </main>

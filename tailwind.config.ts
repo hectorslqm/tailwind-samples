@@ -11,6 +11,7 @@ const config: Config = {
   theme: {
     extend: {
       screens: {
+        //custom sizes
         'tablet' : '640px',
         // => @media (min-width:640) { ... }
         'laptop' : '1024px',
