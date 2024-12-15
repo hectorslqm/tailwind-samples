@@ -1,5 +1,5 @@
 'use client'
-
+import Link from "next/link";
 export default function PlayGround() {
   return (
     <main className="p-4">
@@ -37,14 +37,17 @@ export default function PlayGround() {
         <p>I will appear for device Resolution &lt; 768px</p>
       </div>
       {/* hover effect */}  
-      <button className="my-2 rounded-lg bg-blue-500 px-4 py-2 text-white hover:bg-blue-800 focus:outline-none focus:ring focus:ring-green-400 active:bg-blue-800">
+      <button className="my-2 mx-2 rounded-lg bg-blue-500 px-4 py-2 text-white hover:bg-blue-800 focus:outline-none focus:ring focus:ring-green-400 active:bg-blue-800">
         Click me
+      </button>
+      <button className="mx-2 rounded-lg text-white bg-slate-800 ring p-2 ">
+        <Link href="/">Return to main page</Link>
       </button>
       <ul className="my-2 space-y-2">
         {
         [1,2,3,4,5].map((item, index) => (
           <li key={index}
-            className={`bg-white p-2 ${index === 0 ? `first:bg-yellow-400` : `even:bg-green-400 odd:bg-blue-400` }`}>
+            className={`bg-white text-slate-800 p-2 ${index === 0 ? `first:bg-yellow-400` : `even:bg-green-400 odd:bg-blue-400` }`}>
             Item {item}
           </li>
         ))
